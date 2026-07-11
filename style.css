@@ -1,0 +1,256 @@
+/* ===============================
+   IMPORT FONT
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html, body, [class*="css"]{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===============================
+BACKGROUND
+================================= */
+
+.stApp{
+    background: linear-gradient(-45deg,#0f172a,#1e293b,#312e81,#581c87);
+    background-size:400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color:white;
+}
+
+@keyframes gradientBG{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+/* ===============================
+HIDE STREAMLIT
+================================= */
+
+#MainMenu{
+visibility:hidden;
+}
+
+footer{
+visibility:hidden;
+}
+
+header{
+visibility:hidden;
+}
+
+/* ===============================
+HERO SECTION
+================================= */
+
+.hero{
+
+text-align:center;
+
+padding:60px;
+
+background:rgba(255,255,255,0.08);
+
+backdrop-filter:blur(18px);
+
+border-radius:25px;
+
+box-shadow:0 0 30px rgba(0,255,255,.15);
+
+margin-bottom:40px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+font-weight:700;
+
+color:white;
+
+text-shadow:0 0 25px cyan;
+
+}
+
+.hero h3{
+
+color:#ddd;
+
+}
+
+/* ===============================
+GLASS CARD
+================================= */
+
+div[data-testid="stVerticalBlock"]{
+
+background:rgba(255,255,255,0.05);
+
+border-radius:20px;
+
+padding:15px;
+
+}
+
+/* ===============================
+BUTTONS
+================================= */
+
+.stButton>button{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:15px;
+
+background:linear-gradient(45deg,#00d2ff,#3a7bd5);
+
+color:white;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.stButton>button:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 25px cyan;
+
+}
+
+/* ===============================
+SIDEBAR
+================================= */
+
+section[data-testid="stSidebar"]{
+
+background:#0f172a;
+
+}
+
+section[data-testid="stSidebar"] *{
+
+color:white;
+
+}
+
+/* ===============================
+METRICS
+================================= */
+
+div[data-testid="metric-container"]{
+
+background:rgba(255,255,255,.08);
+
+border-radius:15px;
+
+padding:15px;
+
+box-shadow:0 0 15px rgba(0,255,255,.15);
+
+}
+
+/* ===============================
+SLIDER
+================================= */
+
+.stSlider{
+
+padding-top:15px;
+
+}
+
+/* ===============================
+INFO BOX
+================================= */
+
+.stAlert{
+
+border-radius:15px;
+
+}
+
+/* ===============================
+IMAGE
+================================= */
+
+img{
+
+border-radius:20px;
+
+}
+
+/* ===============================
+TITLE
+================================= */
+
+h1,h2,h3{
+
+color:white;
+
+}
+
+/* ===============================
+SCROLLBAR
+================================= */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#00d2ff;
+
+border-radius:10px;
+
+}
+
+/* ===============================
+ANIMATION
+================================= */
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+img{
+
+animation:float 4s infinite;
+
+}
